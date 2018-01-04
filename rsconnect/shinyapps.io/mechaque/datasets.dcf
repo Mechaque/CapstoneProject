@@ -1,0 +1,9 @@
+name: datasets
+title: datasets
+account: mechaque
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 252991
+bundleId: 1159659
+url: https://mechaque.shinyapps.io/datasets/
+when: 1514940787.32855
