@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coursera Capstone Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Coursera Capstone Project">
+  <meta name="author" content="Mechaque Alexandre Muiuane">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
 
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Coursera Capstone Project</h1>
+    <h2>Next Word Predictor Presentation</h2>
+    <p>Mechaque Alexandre Muiuane<br/>Network Administrator</p>
+  </hgroup>
+    <a href="https://github.com/Mechaque/CapstoneProject/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Next Word Predictor.</p>
+
+<p>The goal of this project is to build an app that will predicts the next word that the user types. To accomplish this task, we will extract datasets from three different sources; Twitter, Blogs, and News. And the prep will consist in the following.</p>
+
+<pre><code>         Download the dataset
+         Clean the files
+         Build ngrams to use 
+         Create a shiny app and use ngrams above for the prediction model
+</code></pre>
+
+<h3>The raw files can be downloade from here <a href="https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip">https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip</a></h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Getting and Cleaning data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Dataset for this project consists of three files which were obtained from; Twitter, News And blogs.
+The process of cleaning will consist on removing all the unwanted text, and other text that is not English.</p>
+
+<p>Secondly, we will perform a necessary analysis on the files to better understand entirely. 
+We will check the size of file, total number of words, number of lines.</p>
+
+<p>And finally check if there will be other things to consider removing for the final corpus of the project.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Bulding Required Ngrams For The Prediction Model</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For the shiny app, we will use 5 ngrams that we will use for our prediction. </p>
+
+<pre><code>First ngram will be consisted of a sequence of 2 words
+The second of 3 words so on till they make up of 5.
+</code></pre>
+
+<p>The Next Things is to save all of the ngrams created above and load them to the same directory with files of the shiny App which the details are on the next slide.</p>
+
+<p>There are already built ngram packages we can use if we do not want build our own,</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The shiny is a r interactive application based application that can be also deployed to shinyApp and be available on the web.
+I used this tool in this project so that the use can interact for word predictions. </p>
+
+<p>The App will read the file available in its database to learn what is the next word the user is more likely to type. Therefore, some predictions may not be available for certain words as the App has limited source to extract information from.</p>
+
+<p>Click the folowing link to view the app  <a href="https://mechaque.shinyapps.io/Project/">https://mechaque.shinyapps.io/Project/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>Feel free to check the source of the the entire project at: <a href="https://github.com/Mechaque/CapstoneProject.git">https://github.com/Mechaque/CapstoneProject.git</a></h4>
+
+<h4>More information on the subject can be found here</h4>
+
+<p><a href="https://www.jstatsoft.org/article/view/v025i05">https://www.jstatsoft.org/article/view/v025i05</a></p>
+
+<p><a href="https://cran.r-project.org/web/views/NaturalLanguageProcessing.html">https://cran.r-project.org/web/views/NaturalLanguageProcessing.html</a></p>
+
+<p><a href="https://www.youtube.com/user/OpenCourseOnline/search?query=NLP">https://www.youtube.com/user/OpenCourseOnline/search?query=NLP</a></p>
+
+<p><a href="https://web.stanford.edu/%7Ejurafsky/NLPCourseraSlides.html">https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html</a></p>
+
+<p>Thank you.</p>
+
+<p>Mechaque Alexandre</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Getting and Cleaning data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Bulding Required Ngrams For The Prediction Model'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Shiny App'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Conclusion'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
